@@ -1,0 +1,48 @@
+@api = http://localhost:3000/api/activos1
+@api3 = http://localhost:3000/api/activos
+@api2 = http://localhost:3000/api/clientes
+
+@api4 = http://localhost:3000/api/activos/x
+
+{{api4}}/1/18
+
+###
+{{api2}}
+
+###
+http://localhost:3000/api/activos/VLTJ33CA
+
+### add a product
+POST http://localhost:3000/api/activos
+Content-Type: application/json
+
+{   
+    "EQC_serie":"1234",
+    "EQC_placa":"4321",
+    "EQC_EQUIP_id":1,
+    "EQC_CLI_id":1,
+    "EQC_USU_ing":18,
+    "EQC_codTag":"77777"
+}
+
+### get product
+{{api}}/4K7XCPRT
+
+### delete product 
+DELETE {{api}}/772
+
+### get count
+{{api3}}/count
+
+### update
+PUT {{api}}/767
+Content-Type: application/json
+
+{
+    "name": "laptop",
+    "description": "some laptop",
+    "quantity": "20"
+}
+
+### get idCliente
+{{api4}}/4

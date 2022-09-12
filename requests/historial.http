@@ -1,0 +1,15 @@
+@api2 = http://localhost:3000/api/historial2
+@api3 = http://localhost:3000/api/historial3
+@api = http://localhost:3000/api/historial6
+@api4 = http://localhost:3000/api/historial4z
+@api5 = http://localhost:3000/api/historial5x
+@api6 = http://localhost:3000/api/historial6y
+@apix = http://localhost:3000/api/historials
+
+
+
+### get
+{{api}}/1/18
+
+###
+{{api5}}/1

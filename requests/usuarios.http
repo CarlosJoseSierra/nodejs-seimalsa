@@ -1,0 +1,41 @@
+@api = http://localhost:3000/api/usuarios
+
+{{api}}
+
+###
+http://localhost:3000/api/activos/VLTJ33CA
+
+### add a product
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "product 2",
+   "description": "some product",
+   "quantity": 10
+}
+
+### get product
+POST {{api}}/login
+Content-Type: application/json
+
+{
+    "USU_usuario": "csierra",
+    "USU_clave": "csierra"
+}
+
+### delete product 
+DELETE {{api}}/772
+
+### get count
+{{api}}/count
+
+### update
+PUT {{api}}/767
+Content-Type: application/json
+
+{
+    "name": "laptop",
+    "description": "some laptop",
+    "quantity": "20"
+}
