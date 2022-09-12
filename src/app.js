@@ -24,7 +24,7 @@ app.use(express.json());
 
 // Routes
 app.get('/',(req,res)=>{
-    res.send('Bienvenido');
+    res.send('Bienvenido 2');
 });
 app.use("/api", productRoutes);
 app.use("/api", activoRoutes);
