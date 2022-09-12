@@ -6,7 +6,6 @@ export const getActivos = async (req, res) => {
     const result = await pool.request().query(querys.getAllActivos);
     res.json(result.recordset);
   } catch (error) {
-    console.log('no se conecto');
     res.status(500);
     res.send(error.message);
   }
