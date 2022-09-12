@@ -8,6 +8,7 @@ export const getActivos = async (req, res) => {
   } catch (error) {
     res.status(500);
     res.send(error.message);
+    res.send('no se conecto');
   }
 };
 
