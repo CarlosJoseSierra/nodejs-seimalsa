@@ -7,7 +7,7 @@ export const dbSettings = {
   server: config.dbServer,
   database: config.dbDatabase,
   options: {
-    encrypt: true, // for azure
+    encrypt: false, // for azure
     trustServerCertificate: true, // change to true for local dev / self-signed certs
   },
 };
@@ -17,7 +17,6 @@ export const getConnection = async () => {
     const pool = await sql.connect(dbSettings);
     return pool;
   } catch (error) {
-    console.log('no se conecto a la base');
     console.error(error);
   }
 };
