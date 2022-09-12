@@ -17,13 +17,14 @@ export const dbSettings = {
 };
 
 export const getConnection = async () => {
+  const pore = process.env.PORT;
   try {
-    console.log("inicio");
+    console.log("puerto 1:"+pore);
     console.log(dbSettings);
     const pool = await sql.connect(dbSettings);
     return pool;
   } catch (error) {
-    console.log("error");
+    console.log("puerto error:"+pore);
     console.log(dbSettings);
     console.error(error);
   }
