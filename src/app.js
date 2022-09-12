@@ -23,6 +23,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Routes
+app.get('/',(req,res)=>{
+    res.send('Bienvenido');
+});
 app.use("/api", productRoutes);
 app.use("/api", activoRoutes);
 app.use("/api", clienteRoutes);
