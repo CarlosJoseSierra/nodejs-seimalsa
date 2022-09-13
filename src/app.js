@@ -20,7 +20,7 @@ app.set("port", config.port);
 app.use(cors(
     {
         //origin: "https://api-seimalsa.herokuapp.com",
-        origin: "http://localhost:3000",
+        //origin: "http://localhost:3000",
     }
 ));
 app.use(morgan("dev"));
