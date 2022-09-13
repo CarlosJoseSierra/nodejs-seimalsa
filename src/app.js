@@ -19,7 +19,7 @@ app.set("port", config.port);
 // Middlewares
 app.use(cors(
     {
-        //origin: "https://api-seimalsa.herokuapp.com",
+        origin: "https://api-seimalsa.herokuapp.com",
     }
 ));
 app.use(morgan("dev"));
@@ -27,9 +27,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Routes
-app.get('/',(req,res)=>{
-    res.send('Bienvenido 2');
-});
+
 app.use("/api", productRoutes);
 app.use("/api", activoRoutes);
 app.use("/api", clienteRoutes);
