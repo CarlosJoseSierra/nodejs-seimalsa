@@ -1,4 +1,6 @@
 @api = http://localhost:3000/api/usuarios
+@api10 = "https://api-seimalsa.herokuapp.com/api/usuarios"
+
 
 {{api}}
 
@@ -17,6 +19,15 @@ Content-Type: application/json
 
 ### get product
 POST {{api}}/login
+Content-Type: application/json
+
+{
+    "USU_usuario": "csierra",
+    "USU_clave": "csierra"
+}
+
+###
+POST {{api10}}/login
 Content-Type: application/json
 
 {
