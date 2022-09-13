@@ -11,7 +11,7 @@ export const dbSettings = {
   server: "181.198.20.179",
   database: "PRODUCCION",
   options: {
-    encrypt: true, // for azure
+    encrypt: false, // for azure
     trustServerCertificate: true, // change to true for local dev / self-signed certs
   },
 };
