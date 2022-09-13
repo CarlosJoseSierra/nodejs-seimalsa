@@ -21,7 +21,8 @@ app.use(cors(
     {
         //origin: "https://api-seimalsa.herokuapp.com",
         //origin: "http://localhost:3000",
-        origin:"cs.seimalsa.ec",
+        //origin:"https://cs.seimalsa.ec",
+        origin: "http://localhost:4200",
     }
 ));
 app.use(morgan("dev"));
