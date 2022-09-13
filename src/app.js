@@ -19,7 +19,8 @@ app.set("port", config.port);
 // Middlewares
 app.use(cors(
     {
-        origin: "https://api-seimalsa.herokuapp.com",
+        //origin: "https://api-seimalsa.herokuapp.com",
+        origin: "http://localhost:3000",
     }
 ));
 app.use(morgan("dev"));
