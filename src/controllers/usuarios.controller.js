@@ -41,7 +41,7 @@ export const getByUserPass = async (req, res) => {
       const result = await pool
         .request()
         .input("USU_usuario", sql.VarChar, USU_usuario)
-        .input("USU_clave", sql.VarChar, USU_clave)
+        //.input("USU_clave", sql.VarChar, USU_clave)
         .query(querys.getUserPass);
       //Lo nuevo implementado por cs
       if(result.recordset[0]){
@@ -49,7 +49,8 @@ export const getByUserPass = async (req, res) => {
             const userFormToken={
               id:result.recordset[0]['USU_id'],
               nameU: result.recordset[0]['USU_usuario']}
-              const token = jwt.sign(userFormToken,process.env.SECRET_WORD)
+              //const token = jwt.sign(userFormToken,process.env.SECRET_WORD)
+              const token = '00ggg';
             return res.json({status: "ok", msg: result.recordset[0],token:token});
           }
           else{
