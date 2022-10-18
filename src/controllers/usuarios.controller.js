@@ -41,7 +41,6 @@ export const getByUserPass = async (req, res) => {
       const result = await pool
         .request()
         .input("USU_usuario", sql.VarChar, USU_usuario)
-        //.input("USU_clave", sql.VarChar, USU_clave)
         .query(querys.getUserPass);
       //Lo nuevo implementado por cs
       if(result.recordset[0]){

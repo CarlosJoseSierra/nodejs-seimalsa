@@ -4,29 +4,48 @@
 
 @api4 = http://localhost:3000/api/activos/x
 
+@api5 = http://localhost:3000/api/activosI
+
+
+
 {{api4}}/1/18
 
 ###
-{{api3}}
+PUT {{api3}}/3220
+Content-Type: application/json
+
+{   
+    "EQC_serie":"55555",
+    "EQC_placa":"55555",
+    "EQC_EQUIP_id":2,
+    "EQC_CLI_id":2,
+    "EQC_USU_ing":17,
+    "EQC_codTag":"S1001",
+    "EQC_LOGO_id":2
+}
 
 ###
 http://localhost:3000/api/activos/VLTJ33CA
 
 ### add a product
-POST http://localhost:3000/api/activos
+POST https://api-seimalsa.herokuapp.com/api/activosI
 Content-Type: application/json
 
 {   
-    "EQC_serie":"1234",
+    "EQC_serie":"1235",
     "EQC_placa":"4321",
     "EQC_EQUIP_id":1,
     "EQC_CLI_id":1,
     "EQC_USU_ing":18,
-    "EQC_codTag":"77777"
+    "EQC_codTag":"77777",
+    "EQC_LOGO_id":1
 }
 
 ### get product
 {{api}}/4K7XCPRT
+
+### delete product 
+PUT  {{api}}/772
 
 ### delete product 
 DELETE {{api}}/772

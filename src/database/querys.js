@@ -17,7 +17,7 @@ export const querys = {
   deleteActivo: "DELETE FROM EQUIPO_COMPLETO WHERE EQC_id= @Id",
   getTotalActivos: "SELECT COUNT(*) FROM EQUIPO_COMPLETO",
   updateActivoById:
-    "UPDATE [EQUIPO_COMPLETO SET EQC_serie = @EQC_serie, EQC_placa = @EQC_placa, EQC_EQUIP_id = @EQC_EQUIP_id,EQC_CLI_id = @EQC_CLI_id,EQC_USU_ing = @EQC_USU_ing, EQC_fecha_ing = @EQC_fecha_ing, EQC_codTag = @EQC_codTag WHERE EQC_id = @Id",
+    "UPDATE EQUIPO_COMPLETO2 SET EQC_serie = @EQC_serie, EQC_placa = @EQC_placa, EQC_EQUIP_id = @EQC_EQUIP_id,EQC_CLI_id = @EQC_CLI_id,EQC_USU_ing = @EQC_USU_ing, EQC_fecha_ing = GETDATE(), EQC_codTag = @EQC_codTag, EQC_LOGO_id = @EQC_LOGO_id WHERE EQC_id = @Id",
   //Querys Tabla Cliente
   getAllClientes: "SELECT CLI_id,CLI_nombre FROM CLIENTE", 
   getClienteById: "SELECT * FROM CLIENTE Where CLI_id = @Id",
