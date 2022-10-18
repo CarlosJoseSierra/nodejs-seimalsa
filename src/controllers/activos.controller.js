@@ -12,7 +12,7 @@ export const getActivos = async (req, res) => {
 };
 
 export const createNewActivo = async (req, res) => {
-  const { EQC_serie, EQC_placa, EQC_EQUIP_id,EQC_CLI_id,EQC_USU_ing,EQC_codTag } = req.body;
+  const { EQC_serie, EQC_placa, EQC_EQUIP_id,EQC_CLI_id,EQC_USU_ing,EQC_codTag,EQC_LOGO_id } = req.body;
   
   // validating
   if (EQC_serie == null || EQC_placa == null ||  EQC_EQUIP_id==null || EQC_CLI_id == null || EQC_USU_ing == null || EQC_codTag == null) {
@@ -30,6 +30,7 @@ export const createNewActivo = async (req, res) => {
       .input("EQC_CLI_id", sql.Decimal, EQC_CLI_id)
       .input("EQC_USU_ing", sql.Decimal, EQC_USU_ing)
       .input("EQC_codTag", sql.VarChar, EQC_codTag)
+      .input("EQC_LOGO_id", sql.VarChar, EQC_LOGO_id)
       .query(querys.addNewActivo);
       if(result.rowsAffected==1){
         return res.status(200).json({ status: "ok", msg: "Registro exitoso" ,token:0});

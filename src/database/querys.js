@@ -13,7 +13,7 @@ export const querys = {
   getActivoById: "SELECT * FROM EQUIPO_COMPLETO Where EQC_id = @Id",
   getActivoByTag: "SELECT EQC_id,EQC_serie,EQC_placa,EQC_EQUIP_id,EQC_CLI_id,EQC_codTag,EQUIP_modelo,EQUIP_marca,EQUIP_descripcion,CLI_nombre FROM EQUIPO_COMPLETO AS E inner join EQUIPO ON EQC_EQUIP_id = EQUIP_id inner join CLIENTE ON EQC_CLI_id = CLI_id Where EQC_codTag = @EQC_codTag",
   addNewActivo:
-    "INSERT INTO EQUIPO_COMPLETO (EQC_serie, EQC_placa, EQC_EQUIP_id,EQC_CLI_id,EQC_USU_ing,EQC_fecha_ing,EQC_codTag) VALUES (@EQC_serie,@EQC_placa,@EQC_EQUIP_id,@EQC_CLI_id,@EQC_USU_ing,GETDATE(),@EQC_codTag);",
+    "INSERT INTO EQUIPO_COMPLETO2 (EQC_serie, EQC_placa, EQC_EQUIP_id,EQC_CLI_id,EQC_USU_ing,EQC_fecha_ing,EQC_codTag,EQC_LOGO_id) VALUES (@EQC_serie,@EQC_placa,@EQC_EQUIP_id,@EQC_CLI_id,@EQC_USU_ing,GETDATE(),@EQC_codTag,@EQC_LOGO_id);",
   deleteActivo: "DELETE FROM EQUIPO_COMPLETO WHERE EQC_id= @Id",
   getTotalActivos: "SELECT COUNT(*) FROM EQUIPO_COMPLETO",
   updateActivoById:
