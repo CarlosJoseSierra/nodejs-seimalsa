@@ -7,6 +7,8 @@ import productRoutes from "./routes/products.routes";
 import usuarioRoutes from "./routes/usuarios.router";
 import historialRoutes from "./routes/historial.router";
 import modeloRoutes from "./routes/modelos.router";
+import logoRoutes from "./routes/logos.router";
+
 import morgan from "morgan";
 
 import config from "./config";
@@ -31,6 +33,7 @@ app.use("/api", equipoRoutes);
 app.use("/api", usuarioRoutes);
 app.use("/api", historialRoutes);
 app.use("/api", modeloRoutes);
+app.use("/api", logoRoutes);
 
 
 export default app;
