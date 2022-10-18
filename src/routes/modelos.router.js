@@ -6,8 +6,7 @@ import {
 
 const router = Router();
 
-//router.get("/modelos", getEquipos);
-
+//router.get("/modelosy", getEquipos);
 router.get("/modelos/:id/:id2", getModeloByIdCliente);
 router.get("/modelosx", getTotalModelo);
 

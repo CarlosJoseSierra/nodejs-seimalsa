@@ -1,13 +1,13 @@
 @api = http://localhost:3000/api/activos1
 @api3 = http://localhost:3000/api/activos
-@api2 = http://localhost:3000/api/clientes
+@api2 = http://localhost:3000/api/modelosz
 
 @api4 = http://localhost:3000/api/activos/x
 
 {{api4}}/1/18
 
 ###
-{{api3}}
+{{api2}}
 
 ###
 http://localhost:3000/api/activos/VLTJ33CA

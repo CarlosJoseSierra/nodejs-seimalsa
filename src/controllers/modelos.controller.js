@@ -26,3 +26,4 @@ export const getTotalModelo = async (req, res) => {
   }
 };
 
+
