@@ -10,5 +10,4 @@ router.get("/logos", getLogos);
 
 router.get("/logos/:id", getLogoById);
 
-
 export default router;

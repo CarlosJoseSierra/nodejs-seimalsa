@@ -11,7 +11,6 @@ export const getLogos = async (req, res) => {
   }
 };
 
-
 export const getLogoById = async (req, res) => {
   try {
     const pool = await getConnection();
