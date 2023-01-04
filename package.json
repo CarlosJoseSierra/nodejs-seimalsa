@@ -4,8 +4,6 @@
   "description": "nodejs and Microsoft SQL Server Datbase REST API",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src --exec babel-node",
-    "build": "src -d dist",
     "start": "node dist"
   },
   "keywords": [],
