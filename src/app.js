@@ -8,9 +8,7 @@ import usuarioRoutes from "./routes/usuarios.router";
 import historialRoutes from "./routes/historial.router";
 import modeloRoutes from "./routes/modelos.router";
 import logoRoutes from "./routes/logos.router";
-
 import morgan from "morgan";
-
 import config from "./config";
 
 const app = express();
