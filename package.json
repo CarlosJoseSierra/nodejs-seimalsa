@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src --exec babel-node",
     "build": "babel src -d dist",
-    "start": "node dist"
+    "start": "dist/index.js"
   },
   "keywords": [],
   "author": "",
