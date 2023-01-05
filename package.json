@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node",
-    "build": "babel src -d dist",
+    "build": "babel src/index.js -d dist",
     "start": "babel-node dist/index.js"
   },
   "keywords": [],
