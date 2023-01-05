@@ -1,11 +1,12 @@
-# fly.toml file generated for nodejs-seimalsa on 2023-01-04T12:50:16-05:00
+# fly.toml file generated for node-seimalsa on 2023-01-05T11:46:31-05:00
 
-app = "nodejs-seimalsa"
+app = "node-seimalsa"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
 [env]
+  PORT = "8080"
 
 [experimental]
   allowed_public_ports = []

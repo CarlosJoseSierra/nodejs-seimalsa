@@ -4,9 +4,9 @@
   "description": "nodejs and Microsoft SQL Server Datbase REST API",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js --exec babel-node",
-    "build": "babel src/index.js -d dist",
-    "start": "babel-node dist/index.js"
+    "dev": "nodemon src --exec babel-node",
+    "build": "",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +18,13 @@
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "mssql": "^7.3.5",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.20"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
